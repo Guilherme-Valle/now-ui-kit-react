@@ -58,11 +58,8 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              Now UI Kit React
+              Rhuan Honório - Psicólogo tomista
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -90,14 +87,42 @@ function IndexNavbar() {
                     e.preventDefault();
                     document
                       .getElementById("download-section")
-                      .scrollIntoView();
+                      .scrollIntoView({ behavior: "smooth" });
                   }}
                 >
                   <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>Download</p>
+                  <p>Quem sou</p>
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav>
+              <NavItem>
+                <NavLink
+                  href="#pablo"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("download-section")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                  <p>Serviços</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="#pablo"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("download-section")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                  <p>Contato</p>
+                </NavLink>
+              </NavItem>
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -136,7 +161,7 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#upgrade-to-pro">
                   Cooming soon!
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
